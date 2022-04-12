@@ -1,18 +1,15 @@
-class Logger{
+class Pokemon{
     constructor (name){
-        this.cound = 0
         this.name = name
     }
-}
-module.exports.Logger = Logger
-
-export function log (sayHello){
-    console.log(sayHello)
-}
-
-export function log (sayMessage){
-    console.log(sayMessage)
+    sayHello(){
+        console.log(`${this.name} te saluda`)
+    }
+    sayMessage(msg){
+        console.log(`${this.name} dice: ${msg}`)
+    }
 }
 
+module.exports = Pokemon
 
 
